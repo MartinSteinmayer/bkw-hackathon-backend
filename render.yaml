@@ -1,8 +1,9 @@
 services:
   - type: web
     name: bkw-hackathon-api
-    runtime: docker
-    dockerfilePath: ./Dockerfile
+    runtime: image
+    image:
+      url: docker.io/martinsteinmayer/bkw-api:latest
     envVars:
       - key: GOOGLE_GEMINI_API_KEY
         sync: false
