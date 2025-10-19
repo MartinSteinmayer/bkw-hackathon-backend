@@ -1,0 +1,44 @@
+# Ignore Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual environments
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment variables
+.env
+.env.local
+
+# Uploads/temp files
+uploads/
+tmp/
+*.tmp
+
+# Git
+.git/
+.gitignore
+
+# Documentation (not needed in container)
+*.md
+!requirements.txt
+
+# Node modules (if you have frontend)
+node_modules/
+bkw-ui/node_modules/
+bkw-ui/.next/
+bkw-ui/out/

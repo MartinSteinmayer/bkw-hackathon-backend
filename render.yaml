@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: bkw-hackathon-api
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: GOOGLE_GEMINI_API_KEY
+        sync: false
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: FRONTEND_URL
+        value: "*"
+      - key: PORT
+        value: "10000"
